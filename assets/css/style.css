@@ -65,9 +65,17 @@ li {
 }
 
 header {
-    background-color: var(--white);
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: none;
+    backdrop-filter: blur(8px);
+    mask: linear-gradient(rgb(0, 0, 0) 0%, rgb(0, 0, 0) 65%, rgba(0, 0, 0, 0) 100%);
+    opacity: 1;
+    z-index: 2;
 }
 
 .navbar {
@@ -109,6 +117,9 @@ header {
 
 footer {
     background: var(--primary-color);
+    z-index: 1;
+    position: relative;
+
 }
 
 .tl-footer-wrap {
@@ -175,6 +186,7 @@ footer {
     background-color: rgb(239, 234, 229);
     border-radius: 100px;
     opacity: 1;
+    width: 92px;
     font-size: 16px;
     color: #000;
     position: relative;
@@ -211,6 +223,12 @@ footer {
     width: 1200px;
     z-index: -1;
 }
+.tl-video-section .tl-hero-video-section2{
+    flex: 1 0 0px;
+    height: 100%;
+    position: relative;
+    width: 1px;
+}
 
 .tl-footer-bottom {
     padding-top: 160px;
@@ -222,33 +240,41 @@ footer {
     display: flex;
     gap: 32px;
 }
-.tl-links .tl-link-column{
+
+.tl-links .tl-link-column {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
-.tl-links .tl-link-column .tl-link-heading{
+
+.tl-links .tl-link-column .tl-link-heading {
     font-size: 16px;
     font-weight: 400;
 }
-.tl-links .tl-link-column .tl-link-list{
+
+.tl-links .tl-link-column .tl-link-list {
     display: flex;
     flex-direction: column;
     gap: 12px;
-}.tl-links .tl-link-column .tl-link-list .tl-link{
+}
+
+.tl-links .tl-link-column .tl-link-list .tl-link {
     font-size: 14px;
     color: #0000008F;
-}.tl-links .tl-link-column .tl-link-list .tl-link:hover{
+}
+
+.tl-links .tl-link-column .tl-link-list .tl-link:hover {
     color: #000;
     transition: 1s;
 }
-.tl-branding{
 
-}
-.tl-branding .tl-title{
+.tl-branding {}
+
+.tl-branding .tl-title {
     font-size: 30px;
 }
-.tl-branding .tl-description{
+
+.tl-branding .tl-description {
     width: 100%;
     max-width: 330px;
     font-size: 16px;
@@ -256,10 +282,78 @@ footer {
     line-height: 24px;
     padding: 24px 0;
 }
-.tl-branding .tl-meta .tl-copyright{
+
+.tl-branding .tl-meta .tl-copyright {
     font-size: 16px;
     color: #0000008F;
 }
-.tl-branding .tl-meta .tl-copyright strong{
+
+.tl-branding .tl-meta .tl-copyright strong {
     color: #000;
+}
+
+/* HERO SECTION  */
+.tl-hero-section { 
+    position: relative;
+    background-color: var(--primary-color);
+    height: 650px;
+    z-index: -1;
+    
+}
+
+ .tl-hero-section .tl-hero-wrap {
+    padding: 160px 0;
+    position: fixed;
+    width: 100%;
+    max-width: 1200px;
+}
+.tl-hero-video-section {
+    display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        height: 100%;
+        justify-content: center;
+        mask: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%) add;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        right: -64px;
+        top: calc(96.843931% - 190.46242774566474% / 2);
+        width: 61%;
+        will-change: var(--framer-will-change-effect-override, transform);
+        z-index: 0;
+}
+.tl-hero-section .tl-hero-wrap .tl-hero-content {}
+
+.tl-hero-section .tl-hero-wrap .tl-hero-content .tl-accepting-new-project {
+    padding-bottom: 24px;
+}
+
+.tl-hero-section .tl-hero-wrap .tl-hero-content .tl-accepting-new-project p {
+    background-color:  #a1806e;
+    border-radius: 50px;
+    padding: 4px 12px;
+    color: #ffffff;
+    width: 160px;
+}
+.tl-hero-section .tl-hero-wrap .tl-hero-content .tl-hero-heading{
+    width: 600px;
+    padding-bottom: 16px;
+}
+.tl-hero-section .tl-hero-wrap .tl-hero-content .tl-hero-heading h1 {
+    font-size: 64px;
+
+}
+
+.tl-hero-section .tl-hero-wrap .tl-hero-content .tl-hero-heading h1 span {
+    color: #0000008F;
+}
+.tl-hero-section .tl-hero-wrap .tl-hero-content .tl-hero-description{
+    width: 590px;
+    padding-bottom: 32px;
+}
+.tl-hero-section .tl-hero-wrap .tl-hero-content .tl-hero-description p{
+    font-size: 20px;
+    color: #0000008F;
 }
