@@ -506,21 +506,25 @@ footer {
     align-items: center;
     font-family: Arial, sans-serif;
     margin: auto;
-    
+
 }
-.tl-accordions .accordions-heading{
+
+.tl-accordions .accordions-heading {
     text-align: center;
 }
-.tl-accordions .accordions-heading h2{
+
+.tl-accordions .accordions-heading h2 {
     padding-bottom: 16px;
     font-size: 40px;
 }
-.tl-accordions .accordions-heading p{
+
+.tl-accordions .accordions-heading p {
     font-size: 18px;
     color: #0000008F;
     padding-bottom: 64px;
 
 }
+
 .accordion-item {
     padding: 24px;
 }
@@ -533,7 +537,8 @@ footer {
     align-items: center;
     transition: background-color 0.3s;
 }
-.accordion-header h3{
+
+.accordion-header h3 {
     font-size: 20px;
 }
 
@@ -556,7 +561,7 @@ footer {
     line-height: 1.5rem;
 }
 
-.icon img{
+.icon img {
     font-size: 1.2rem;
     transition: transform 0.3s;
     width: 18px;
@@ -573,9 +578,65 @@ footer {
 
 
 }
+
 .icon {
     transform: rotate(0deg);
     transition: transform 0.3s;
 
 
+}
+
+.tl-beyond {
+    position: relative;
+    background: #ffffff;
+    padding: 80px 0;
+}
+
+.tl-beyond .tl-beyond-heading {
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+.tl-beyond .tl-beyond-heading h2 {
+    font-size: 40px;
+    padding-bottom: 16px;
+}
+
+.tl-beyond .tl-beyond-heading p {
+    font-size: 18px;
+    color: #0000008F;
+}
+
+.tl-beyond-features-logo {
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.tl-beyond-features .tl-beyond-features-logo-wrap {
+    width: 36px;
+}
+
+.tl-beyond .tl-beyond-wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+.tl-beyond .tl-beyond-wrapper .tl-beyond-features {
+    text-align: center;
+    padding: 32px;
+}
+
+.tl-beyond .tl-beyond-wrapper .tl-beyond-features .tl-beyond-features-content .feature-heading {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+
+.tl-beyond-wrapper .tl-beyond-features .tl-beyond-features-content .feature-paragaph {
+    font-size: 16px;
+    color: #0000008F;
+    line-height: 1.5rem;
 }
