@@ -58,3 +58,27 @@ prevBtn.addEventListener('click', prevSlide);
 window.addEventListener('resize', () => {
     updateContent();
 });
+
+let lastScroll = 0;
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+  const section = document.querySelector('.tl-collaboration-seamless');
+  const sectionTop = section.offsetTop;
+  const sectionHeight = section.offsetHeight;
+
+  // Check if section is in view
+  if (currentScroll > sectionTop - window.innerHeight/2 && 
+      currentScroll < sectionTop + sectionHeight) {
+      
+    if (currentScroll > lastScroll) {
+      // Scrolling down - hands come in
+      section.classList.add('active');
+    } else {
+      // Scrolling up - hands go out
+      section.classList.remove('active');
+    }
+  }
+
+  lastScroll = currentScroll;
+}, { passive: true });
