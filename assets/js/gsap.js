@@ -116,4 +116,27 @@ ScrollTrigger.create({
   }
 });
 
+
+gsap.to(".tl-hero-content", {
+  y: 50, // move 50px down
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".tl-hero-content",
+    start: "top bottom",  // when top of element hits bottom of viewport
+    end: "bottom top",    // when bottom of element hits top of viewport
+    scrub: true,          // smooth connect with scroll
+  }
+});
+
 // Optional: Add rotation for more dynamic effect
+gsap.to(".tl-cursor img", {
+  y: -20,    // Move more upwards (negative means up)
+  x: -10,    // Move slightly to the left (negative means left)
+  ease: "power2.out", // smoother "lazy" feel (power2 is softer than power1)
+  scrollTrigger: {
+    trigger: ".tl-cursor",
+    start: "top 70%",      // start animation earlier
+    end: "bottom top",     
+    scrub: 1,              // scrub value (1) makes it more lazy/smooth
+  }
+});
