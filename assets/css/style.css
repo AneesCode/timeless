@@ -1934,7 +1934,10 @@ img.tl-get-in-touch-icon {
     .hamburger {
         display: block;
     }
-
+    .tl-hero-section .tl-hero-wrap .tl-hero-content {
+        width: 100%;
+        max-width: 95%;
+    }
     .nav-menu-wrapper {
         display: none;
         /* Hide menu by default */
@@ -1961,7 +1964,7 @@ img.tl-get-in-touch-icon {
 
     .tl-hero-section .tl-hero-wrap .tl-hero-content {
         width: 100%;
-        max-width: 100%;
+        max-width: 95%;
     }
 
     .tl-hero-video-section {
@@ -2111,7 +2114,8 @@ img.tl-get-in-touch-icon {
     }
 
     .tl-blog-content {
-        width: 94%;
+        width: 100%;
+        max-width: 90%;
     }
 
     .tl-product {
@@ -2254,7 +2258,11 @@ img.tl-get-in-touch-icon {
 
     .tl-hero-section .tl-hero-wrap .tl-hero-content {
         width: 100%;
-        max-width: 100%;
+        max-width: 95%;
+    }
+    .tl-blog-content {
+        width: 100%;
+        max-width: 88%;
     }
 
     .logo img {
